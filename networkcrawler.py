@@ -82,7 +82,7 @@ while to_crawl:
         target = to_crawl.pop()
         try:
                 # remember to put your username and password in the line below
-                just_crawled = cdpcommand("target","yourusername","yourpassword")
+                just_crawled = cdpcommand(target,"yourusername","yourpassword")
         except OSError:
                 crawl_ed.append(target)
         except pexpect.EOF:
