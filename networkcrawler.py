@@ -1,4 +1,4 @@
-#! /usr/local/bin/python
+#! /usr/local/python
 
 # This work is licensed under the GNU General Public License
 #
@@ -8,7 +8,6 @@
 #
 # Dependencies pexpect (Python Expect). You will need to load this module before the
 # Network Crawler will work.
-# Dependencies - Also make sure your python path is correct it's usually usr/bin/python
 
 import pexpect
 
