@@ -8,12 +8,8 @@
 #
 # Dependencies pexpect (Python Expect). You will need to load this module before the
 # Network Crawler will work.
-# Dependencies - Also make sure your python path is correct it's usually usr/bin/python
 
 import pexpect
-
-# Please place your seed device in the to_crawl list.
-# modify the to_crawl list. i.e. to_crawl = ['yourrouter1']
 
 seed = raw_input('Enter One Seed Device: ')
 user = raw_input('Username? ')
@@ -84,9 +80,6 @@ def cdpcommand(switch_ip,switch_un,switch_pw):
 				cdpout.append(datalist[indexer + 10:endindexer])
         return cdpout
 
-
-# This is where you add your username and password. Add your username and password
-# to the cdpcommand procedure call.
 
 while to_crawl:
 	target = to_crawl.pop()
