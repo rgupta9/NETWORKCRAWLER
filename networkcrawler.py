@@ -1,6 +1,6 @@
 #! /usr/local/python
 
-# This work is licensed under the GNU General Public License
+# This work is licensed under the GNU General Public License v3.0
 #
 # This script crawls a Cisco network but can be easily modified for any network devices
 # running LLDP. This script is the basic engine to crawl a network. Extension ideas could be 
