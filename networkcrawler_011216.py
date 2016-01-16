@@ -91,14 +91,12 @@ def cdpcommand(switch_ip,switch_un,switch_pw):
         return cdpout
 
 
-# This is where you add your username and password. Add your username and password
-# to the cdpcommand procedure call.
+
 connections = open('./connections.txt', 'w')
 while to_crawl:
 	target = to_crawl.pop()
 	just_crawled = []
 	try:
-		# remember to put your username and password in the line below
 		just_crawled = cdpcommand(target,user,passwd)
 	except OSError:
 		crawl_ed.append(target)
